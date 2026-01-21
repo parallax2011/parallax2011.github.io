@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+    color: #33ff33;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.terminal {
+    border: 2px solid #33ff33;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: black;
+    text-align: left;
+}
+
+.terminal-header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #33ff33;
+    padding-bottom: 5px;
+}
+
+.terminal-content p {
+    margin: 5px 0;
+}
+
+.terminal-content p:last-child {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
